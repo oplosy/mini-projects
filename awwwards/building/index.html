@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kaide Yapı, 1987'den beri konut, ofis ve kamu yapılarını zemin etüdünden anahtar teslimine kadar tek elden inşa eden genel müteahhit." />
+    <meta name="theme-color" content="#c9c6be" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..800&family=Hanken+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+    <title>Kaide Yapı | Zeminden göğe</title>
+  </head>
+  <body>
+    <!-- One fixed 3D scene; every chapter below moves the same camera -->
+    <canvas class="world" aria-hidden="true"></canvas>
+
+    <div class="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <div class="loader__shaft"><span></span></div>
+        <div>
+          <p class="loader__label">Kat</p>
+          <p class="loader__num">00</p>
+          <p class="loader__label">Kaide Yapı, 1987</p>
+        </div>
+      </div>
+    </div>
+
+    <header class="nav">
+      <a class="nav__logo" href="#top" aria-label="Kaide Yapı, sayfa başı">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="11" y="6" width="10" height="14" /><rect x="8" y="20" width="16" height="3" /><rect x="5" y="23" width="22" height="3" /></svg>
+        <span>Kaide</span>
+      </a>
+      <nav class="nav__links" aria-label="Ana menü">
+        <a href="#projeler">Projeler</a>
+        <a href="#kesit">Kesit</a>
+        <a href="#disiplinler">Disiplinler</a>
+        <a class="nav__cta" href="#iletisim">Teklif isteyin</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- 0 · Build -->
+      <section class="chapter" data-len="520" aria-label="Atlas Rezidans inşaatı, kaydırdıkça ilerler">
+        <div class="overlay overlay--build">
+          <div class="hero__intro">
+            <h1 class="hero__title display"><span class="line">Zeminden</span><span class="line">göğe.</span></h1>
+            <p class="hero__lede">Kaide Yapı, 1987'den beri konut, ofis ve kamu yapılarını zemin etüdünden anahtar teslimine kadar tek elden inşa ediyor.</p>
+            <p class="hero__hint"><span class="hero__hint-line"></span>Kaydırın, kule yükselsin</p>
+          </div>
+
+          <div class="hero__phases" aria-live="polite">
+            <article class="phase">
+              <p class="phase__n">Aşama 1 / 4</p>
+              <h2 class="phase__title display">Temel</h2>
+              <p class="phase__text">36 metre derinliğe 124 fore kazık. Önce zemini dinliyor, yükü ancak sonra ona emanet ediyoruz.</p>
+            </article>
+            <article class="phase">
+              <p class="phase__n">Aşama 2 / 4</p>
+              <h2 class="phase__title display">Karkas</h2>
+              <p class="phase__text">Çekirdek perdeler kayar kalıpla önden gider. Kolonlar ve döşemeler her altı günde bir kat yükselir.</p>
+            </article>
+            <article class="phase">
+              <p class="phase__n">Aşama 3 / 4</p>
+              <h2 class="phase__title display">Cephe</h2>
+              <p class="phase__text">Fabrikada üretilen 672 cam panel vinçle yerine oturur. Bina gökyüzünü ilk kez yansıtır.</p>
+            </article>
+            <article class="phase">
+              <p class="phase__n">Aşama 4 / 4</p>
+              <h2 class="phase__title display">Teslim</h2>
+              <p class="phase__text">Vinç söküldü, ışıklar yandı. Şimdi içeri girelim: 18. katta bir ışık hâlâ açık.</p>
+            </article>
+          </div>
+
+          <aside class="meter" aria-label="Şantiye durumu">
+            <p class="meter__label">Kot</p>
+            <p class="meter__value"><span data-height>+0,0</span> m</p>
+            <p class="meter__floors">Kat <span data-floor>00</span> / 28</p>
+            <ol class="phases">
+              <li><span class="phases__n">01</span><span class="phases__name">Temel</span><span class="phases__bar"><i></i></span></li>
+              <li><span class="phases__n">02</span><span class="phases__name">Karkas</span><span class="phases__bar"><i></i></span></li>
+              <li><span class="phases__n">03</span><span class="phases__name">Cephe</span><span class="phases__bar"><i></i></span></li>
+              <li><span class="phases__n">04</span><span class="phases__name">Teslim</span><span class="phases__bar"><i></i></span></li>
+            </ol>
+            <p class="meter__project">Atlas Rezidans, Ataşehir</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 1 · Approach and entry -->
+      <section class="chapter" data-len="300" aria-label="Kaide Yapı hakkında">
+        <div class="overlay overlay--manifesto">
+          <p class="manifesto__text display">Otuz dokuz yılda İstanbul'dan Bakü'ye 142 yapı teslim ettik. Hepsinde aynı sırayı izledik: önce zemini anlamak, sonra yükselmek. Hesabımız açık, şantiyemiz temiz, takvimimiz gerçek.</p>
+          <dl class="facts">
+            <div><dt>Kuruluş</dt><dd>1987, Ankara</dd></div>
+            <div><dt>Ekip</dt><dd>1.400 kişi, 310 mühendis</dd></div>
+            <div><dt>Teslim edilen</dt><dd>142 yapı, 4,1 milyon m²</dd></div>
+            <div><dt>Kaza sıklık oranı</dt><dd>0,42 (sektör ortalaması 2,9)</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 2 · Model table -->
+      <section class="chapter" id="projeler" data-len="560" data-anchor="0.083" aria-labelledby="projeler-baslik">
+        <div class="overlay overlay--projects">
+          <div class="projects__panel">
+            <div class="projects__head">
+              <h2 id="projeler-baslik" class="display">Seçili projeler</h2>
+              <p class="projects__count" aria-live="polite"><span data-project-index>01</span> / 06</p>
+            </div>
+            <div class="projects__cards"><!-- rendered from src/data.js --></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 · Drawing sheet -->
+      <section class="chapter" id="kesit" data-len="320" data-anchor="0.45" aria-labelledby="kesit-baslik">
+        <div class="overlay overlay--drawing">
+          <div class="drawing__stage">
+            <div class="drawing__copy">
+              <h2 id="kesit-baslik" class="display">Bir kulenin kesiti</h2>
+              <p>Bir yapıyı anlatmanın en dürüst yolu çizimidir. Kaydırdıkça Meridyen Kule'nin uygulama projesini, şantiyedeki sırasıyla yeniden çiziyoruz: önce zemin, sonra kazıklar, en son çatı.</p>
+              <p class="drawing__note">Rakamlar 2024 teslim dosyasındaki metrajlardan alınmıştır.</p>
+            </div>
+            <figure class="drawing__sheet">
+              <div class="drawing__svg-wrap"></div>
+              <figcaption class="titleblock">
+                <div><span>Proje</span>Meridyen Kule</div>
+                <div><span>Pafta</span>K-01, düşey kesit</div>
+                <div><span>Ölçek</span>1/1500</div>
+                <div><span>Tarih</span>03.2021</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 · City through the window -->
+      <section class="chapter" id="disiplinler" data-len="360" data-anchor="0.12" aria-labelledby="disiplin-baslik">
+        <div class="overlay overlay--disciplines">
+          <div class="disciplines__panel">
+            <h2 id="disiplin-baslik" class="display">Ne inşa ediyoruz</h2>
+            <p class="disciplines__lede">Batı penceresinden Ataşehir. Gördüğün her yapı türü dört işimizden birine karşılık geliyor; hepsinde tasarım onayından teslime kadar tek sözleşme, tek sorumlu.</p>
+            <ol class="disc-list"><!-- rendered from src/data.js --></ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 5 · Exit to the skyline -->
+    <footer class="chapter chapter--last" id="iletisim" data-len="240" data-anchor="1">
+      <div class="overlay overlay--contact">
+        <p class="contact__lead">Arsanız, projeniz ya da yalnızca bir fikriniz varsa:</p>
+        <h2 class="contact__title display"><span class="line">Bir sonraki</span><span class="line">katı birlikte</span><span class="line">çıkalım.</span></h2>
+        <a class="contact__cta" href="mailto:teklif@kaideyapi.com.tr?subject=Proje%20g%C3%B6r%C3%BC%C5%9Fmesi"><span>Proje görüşmesi isteyin</span></a>
+
+        <div class="contact__grid">
+          <div>
+            <h3>Merkez ofis</h3>
+            <p>Büyükdere Caddesi No. 185<br />Levent, 34394 İstanbul</p>
+          </div>
+          <div>
+            <h3>Telefon</h3>
+            <p><a href="tel:+902125550187">+90 212 555 01 87</a></p>
+          </div>
+          <div>
+            <h3>E-posta</h3>
+            <p><a href="mailto:teklif@kaideyapi.com.tr">teklif@kaideyapi.com.tr</a></p>
+          </div>
+          <div>
+            <h3>Şantiye ofisleri</h3>
+            <p>Ankara, İzmir, Bakü</p>
+          </div>
+        </div>
+
+        <div class="contact__base">
+          <p>© 2026 Kaide Yapı A.Ş.</p>
+          <p><a href="#">KVKK aydınlatma metni</a></p>
+          <p><a href="#">İş güvenliği politikası</a></p>
+          <p>Şehir verisi <a href="https://www.openstreetmap.org/copyright" rel="noopener">© OpenStreetMap katkıcıları</a></p>
+          <a href="#top" class="contact__top">Zemine dön</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

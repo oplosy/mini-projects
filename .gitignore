@@ -1,0 +1,25 @@
+# Dependencies and build output: reinstall with npm install, rebuild with npm run build.
+node_modules/
+dist/
+dist-ssr/
+
+# Blender's automatic backups of .blend files.
+*.blend1
+*.blend2
+
+# Local tool and editor settings.
+.claude/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets never belong here.
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log

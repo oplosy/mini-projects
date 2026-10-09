@@ -1,0 +1,10 @@
+# Binary assets: never touch their line endings.
+*.blend binary
+*.bin binary
+*.glb binary
+*.hdr binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.zip binary
+*.wasm binary

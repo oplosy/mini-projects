@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pelagic — Okyanus Simülasyonu</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="c" tabindex="0"></canvas>
+
+<div id="title" class="glass">
+  <h1>PELAGIC · OKYANUS</h1>
+  <div class="sub">FFT dalga simülasyonu · JONSWAP spektrumu</div>
+  <div class="stats" id="stats">…</div>
+</div>
+
+<div id="panel" class="glass hidden">
+  <div class="head"><b>AYARLAR</b><button class="icon" id="hidePanel" title="Paneli gizle (H)">✕</button></div>
+  <div class="grid2" id="presets"></div>
+  <div id="controls"></div>
+  <div class="sec">Kamera</div>
+  <div class="grid2">
+    <button id="modeBtn" title="B">Tekne modu</button>
+    <button id="pauseBtn" title="P">Duraklat</button>
+    <button id="shotBtn">Görüntü kaydet</button>
+    <button id="fsBtn" title="F">Tam ekran</button>
+  </div>
+</div>
+<button id="showPanel" class="glass vis">Ayarlar</button>
+
+<div id="help" class="glass">
+  <kbd>Sürükle</kbd> bak · <kbd>W A S D</kbd> hareket · <kbd>Q</kbd>/<kbd>E</kbd> alçal/yüksel · <kbd>Shift</kbd> hızlı · <kbd>Tekerlek</kbd> yakınlaştır · <kbd>B</kbd> tekne · <kbd>P</kbd> duraklat · <kbd>H</kbd> panel
+</div>
+<div id="err"></div>
+
+<script src="./app.js"></script>
+</body>
+</html>
